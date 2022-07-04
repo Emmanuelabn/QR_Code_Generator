@@ -8,6 +8,7 @@ from PIL import Image, ImageTk
 
 def btn_browse_cmd():
     path = filedialog.askdirectory(title="Select a File")
+    tBoxBrowse.delete(1.0, END)
     tBoxBrowse.insert('end', path)
 
 
